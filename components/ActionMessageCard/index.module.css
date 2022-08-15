@@ -1,0 +1,50 @@
+.messageContainer {
+    margin: 10px 20px;
+    overflow: hidden;
+    border-radius: 6px;
+    padding: 18px 36px;
+    color: var(--color-highlight);
+    position: relative;
+    filter: drop-shadow(0 5px 5px rgba(40, 38, 44, 0.165));
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.insert,
+.remove {
+    margin: 0 20px;
+    padding: 0 36px;
+    height: 0;
+    opacity: 0;
+}
+
+.success {
+    background-color: var(--color-success);
+}
+
+.error {
+    background-color: var(--color-error);
+}
+
+.status {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+}
+
+.close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    height: 10px;
+    fill: var(--color-highlight);
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.message {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 12px;
+    margin-bottom: 8px;
+}

@@ -1,0 +1,51 @@
+.container {
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-highlight);
+    border-radius: 6px;
+    filter: var(--drop-shadow);
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 12px;
+    border-bottom: solid 2px #d0d0d0;
+}
+
+.iconSection {
+    display: flex;
+    align-items: center;
+}
+
+.iconContainer {
+    margin-right: 24px;
+}
+
+.iconContainer > svg {
+    height: 64px;
+    fill: var(--color-primary);
+}
+
+.label {
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.balance {
+    color: var(--color-secondary);
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.userName {
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 18px;
+}
+
+.chart {
+    padding-top: 24px;
+}

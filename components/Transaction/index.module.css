@@ -1,0 +1,51 @@
+.container {
+    border: solid 2px var(--color-primary);
+    border-radius: 6px;
+    padding: 12px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 12px 0;
+}
+
+.section {
+    border-right: solid 1px #d0d0d0;
+    padding: 0 8px;
+    width: 100%;
+}
+
+.section:last-of-type {
+    border-right: none;
+}
+
+.label {
+    color: var(--color-secondary);
+    font-size: 12px;
+}
+
+.transactionId {
+    max-width: 44ch;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.amount {
+    color: var(--color-text);
+    white-space: nowrap;
+}
+
+.status {
+    font-weight: normal;
+}
+
+.accepted {
+    color: var(--color-success);
+}
+
+.declined {
+    color: var(--color-error);
+}
+
+.pending {
+    color: var(--color-secondary);
+}

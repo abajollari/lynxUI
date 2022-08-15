@@ -1,0 +1,120 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 100px;
+    padding-bottom: 40px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 60px;
+}
+
+.imageContainer {
+    padding: 0 100px;
+    width: 100%;
+}
+
+.heroImage {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    padding: 80px;
+}
+
+.title {
+    font-size: 48px;
+    margin-bottom: 32px;
+}
+
+.paragraph {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 20px 0;
+}
+
+.mockupContainer {
+    padding: 0 140px;
+    grid-row: 2/4;
+    grid-column: 2/3;
+}
+
+.mockupImage {
+    width: 100%;
+    height: auto;
+}
+
+.teamContainer {
+    padding: 0 80px;
+}
+
+.teamTitle {
+    color: var(--color-primary);
+    font-size: 26px;
+    margin: 24px 0;
+}
+
+.membersContainer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 1300px) {
+    .imageContainer {
+        padding: 0 40px;
+    }
+
+    .mockupContainer {
+        padding: 0 80px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .teamTitle {
+        color: var(--color-highlight);
+    }
+
+    .content:nth-of-type(1) {
+        order: 1;
+    }
+
+    .imageContainer {
+        order: 2;
+    }
+
+    .content:nth-of-type(3) {
+        order: 3;
+    }
+
+    .mockupContainer {
+        order: 4;
+    }
+
+    .teamContainer {
+        order: 5;
+    }
+}
+
+@media (max-width: 700px) {
+    .content {
+        padding: 20px;
+    }
+
+    .imageContainer {
+        padding: 0;
+    }
+
+    .membersContainer {
+        flex-wrap: wrap;
+        justify-content: stretch;
+    }
+}

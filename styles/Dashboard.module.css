@@ -1,0 +1,25 @@
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: grid;
+    top: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.container > * {
+    padding: 12px;
+}
+
+.userinfoContainer {
+    grid-row: 2 span;
+}
+
+.balanceInfoContainer {
+    grid-column: 12 span;
+}
+
+.transactionsHistoryContainer {
+    grid-column: 12 span;
+}

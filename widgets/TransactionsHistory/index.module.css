@@ -1,0 +1,25 @@
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-highlight);
+  border-radius: 6px;
+  filter: var(--drop-shadow);
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 12px;
+  border-bottom: solid 2px #d0d0d0;
+  color: var(--color-secondary);
+}
+
+.transactionsContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+}

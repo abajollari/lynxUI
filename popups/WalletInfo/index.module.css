@@ -1,0 +1,93 @@
+.container {
+    position: relative;
+    overflow: hidden;
+}
+
+.wraper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-items: center;
+    padding: 40px 180px;
+
+    border-radius: 6px;
+}
+
+.title {
+    grid-column: 2 span;
+    letter-spacing: 4px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.qrCodeContainer > svg {
+    min-height: 256px;
+    min-width: 256px;
+}
+
+.actionsContainer {
+    grid-column: 2 span;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.key {
+    width: 100%;
+    text-align: center;
+    display: block;
+    /* margin-top: 12px; */
+    margin-bottom: 0;
+    padding: 4px 4px;
+    /* border: solid 2px var(--color-primary); */
+    /* border-radius: 24px; */
+    font-size: 18px;
+    background-color: var(--color-highlight);
+    word-break: break-all;
+}
+
+.hidden {
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    border: none;
+}
+
+.button {
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    padding: 12px 24px;
+    letter-spacing: 0.64px;
+    border-radius: 8px;
+    color: var(--color-highlight);
+    cursor: pointer;
+    text-align: center;
+    background-color: var(--color-secondary);
+    max-width: 240px;
+    margin: 0 auto;
+    display: block;
+}
+
+@media (max-width: 800px) {
+    .wraper {
+        grid-template-columns: 1fr;
+    }
+    .image {
+        display: none;
+    }
+}
+
+@media (max-width: 460px) {
+    .wraper {
+        padding: 10px 10px;
+    }
+}

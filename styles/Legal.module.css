@@ -1,0 +1,60 @@
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.formWraper {
+    max-width: 1100px;
+    margin: 80px auto;
+    align-items: center;
+    justify-items: center;
+    filter: var(--drop-shadow);
+    background-color: var(--color-highlight);
+    padding: 40px 80px;
+    border-radius: 6px;
+}
+
+.pageTitle {
+    font-size: 48px;
+    color: var(--color-primary);
+    margin-top: 48px;
+    margin-bottom: 24px;
+}
+
+.lastUpdate {
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+
+.sectionTitle {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.sectionSubtitle {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.pharagraph {
+    margin-bottom: 24px;
+}
+
+.listWraper {
+    padding-left: 32px;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 1150px) {
+    .formWraper {
+        grid-template-columns: 1fr;
+        margin: 40px 25px;
+    }
+}
+
+@media (max-width: 500px) {
+    .formWraper {
+        padding: 20px 40px;
+    }
+}

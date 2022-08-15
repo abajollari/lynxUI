@@ -1,0 +1,43 @@
+.container {
+    position: relative;
+    overflow: hidden;
+    padding: 80px;
+}
+
+.title {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.subSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.articleContainer {
+    height: 100%;
+    padding: 20px;
+}
+
+@media (max-width: 1150px) {
+    .subSection {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding: 60px 40px;
+    }
+
+    .subSection {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 60px 20px;
+    }
+}
